@@ -1,0 +1,40 @@
+#whole{
+	background-color: white;
+}
+
+#footd {
+	width:50px;
+	height:50px;
+	float: left;
+	margin-left: 30%;
+	margin-top: 2%;
+}
+
+
+#footi{
+
+	width: 50px;
+	height: 50px;	 
+}
+#foot1{
+	width: 60px;
+	height: 55px;	 
+}
+
+#footd:HOVER{
+	-moz-transition: 1s ease-in-out;
+	-moz-transform: scale(2,2);
+}
+
+
+p{
+	text-align: center;
+	font-style: normal;
+	font-size: 20px;
+}
+
+#OT_header
+{
+font-size:42px;
+color:#303f9f;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <script src="js/jquery2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+      <script src="buy.js"></script>
+  <style>
+  body {
+      position: relative;
+  }
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+  </style>
+</head>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#homepage">BuyIt!</a><!--id daal-->
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          
+		  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Men<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="home.html" class="hyper">hola</a></li>
+              <li><a href="#section1">Section 4-2</a></li>
+            </ul>
+			<li class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="women.html">Women<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                                                                <li><a href="#dress">Dresses</a></li>
+								<li><a href="#section3">Sarees</a></li>
+								<li><a href="#section41">Skirts</a></li>
+								<li><a href="#section42">Jeans</a></li>
+								<li><a href="#section2">Shirts</a></li>
+            </ul>
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chidren<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+           
+								<li><a href=#sec1>Shorts & Skirts-Girls</a></li>
+								<li><a href=#sec2>t-shirts and Tops-Girls</a></li>
+								<li><a href=#sec3>Jeans and Shorts-Boys</a></li>	
+								<li><a href=#sec4>t-Shirts-Boys</a></li>
+            </ul>
+          <li><a href="payment.html">Payment</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sale <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+		  
+
+		  </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	// Initializes the carousel
+    $(".start-slide").click(function(){
+    	$("#myCarousel").carousel('cycle');
+    });
+	// Stops the carousel
+    $(".pause-slide").click(function(){
+    	$("#myCarousel").carousel('pause');
+    });
+	// Cycles to the previous item
+    $(".prev-slide").click(function(){
+    	$("#myCarousel").carousel('prev');
+    });
+	// Cycles to the next item
+    $(".next-slide").click(function(){
+    	$("#myCarousel").carousel('next');
+    });
+	// Cycles the carousel to a particular frame 
+    $(".slide-one").click(function(){
+    	$("#myCarousel").carousel(0);
+    });
+    $(".slide-two").click(function(){
+    	$("#myCarousel").carousel(1);
+    });
+    $(".slide-three").click(function(){
+    	$("#myCarousel").carousel(2);
+    });
+});
+</script>
+<style type="text/css">
+.carousel{
+    background: #2f4357;
+    margin: 20px 0;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.control-buttons{
+	text-align: center;
+}
+.bs-example{
+	margin: 20px;
+}
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-interval="3000"  data-ride="carousel">
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="zara.jpg" alt="First Slide">
+         		<div class="carousel-caption">
+                <h3></h3>
+       
+                </div>
+            </div>
+            <div class="item">
+                <img src="pepe.jpg"  alt="Second Slide">
+                <div class="carousel-caption">
+                  <h3></h3>
+        
+                </div>
+            </div>
+            <div class="item">
+                <img src="Forever21.jpg" alt="Third Slide">
+                <div class="carousel-caption">
+                 <h3></h3>
+      
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
